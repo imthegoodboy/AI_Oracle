@@ -16,6 +16,7 @@ import NotFound from "./pages/NotFound";
 import ModelDetails from "./pages/ModelDetails";
 import ModelDocs from "./pages/ModelDocs";
 import ApiKeys from "./pages/ApiKeys";
+import ProviderRegister from "./pages/ProviderRegister";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ const App = () => (
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/docs" element={<Docs />} />
               <Route path="/api-keys" element={<ApiKeys />} />
+              <Route path="/provider-register" element={<ProviderRegister />} />
               <Route path="/marketplace/:id" element={<ModelDetails />} />
               <Route path="/docs/models/:id" element={<ModelDocs />} />
               <Route path="/provider-dashboard" element={<ProviderDashboard />} />

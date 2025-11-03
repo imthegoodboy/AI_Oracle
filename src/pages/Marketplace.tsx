@@ -91,7 +91,7 @@ const Marketplace = () => {
             <p className="text-muted-foreground mb-6">
               Be the first to register as an AI provider and add your models!
             </p>
-            <a href="/provider-dashboard">
+            <a href="/provider-register">
               <Button className="bg-gradient-primary">Become a Provider</Button>
             </a>
           </Card>

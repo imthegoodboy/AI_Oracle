@@ -38,26 +38,9 @@ const ProviderDashboard = () => {
     setLoading(false);
   };
 
-  const handleRegister = async () => {
+  const handleRegister = () => {
     if (!user) return navigate("/auth");
-    const { data, error } = await supabase
-      .from("ai_providers")
-      .insert({
-        user_id: user.id,
-        provider_name: user.user_metadata?.full_name || "New Provider",
-        description: "AI provider on AI Oracle Network",
-        website: null,
-        stake_amount: 0,
-        total_requests: 0,
-        successful_requests: 0,
-        reputation_score: 0,
-      })
-      .select("*")
-      .maybeSingle();
-
-    if (!error) {
-      setProvider(data as AIProvider);
-    }
+    navigate("/provider-register");
   };
 
   if (authLoading || loading) {
