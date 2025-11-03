@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 25% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 20% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 25% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 188 100% 50%;
+    --primary-foreground: 220 25% 6%;
+
+    --secondary: 280 80% 60%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 280 80% 60%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 188 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(188 100% 50%), hsl(280 80% 60%));
+    --gradient-hero: linear-gradient(180deg, hsl(220 25% 6%), hsl(220 25% 10%));
+    --gradient-card: linear-gradient(135deg, hsl(220 20% 10% / 0.5), hsl(220 20% 12% / 0.8));
+    
+    --glow-cyan: 0 0 30px hsl(188 100% 50% / 0.3);
+    --glow-purple: 0 0 30px hsl(280 80% 60% / 0.3);
+    
+    --animation-duration: 0.3s;
+    --animation-curve: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .card-glow {
+    box-shadow: var(--glow-cyan);
+    transition: box-shadow var(--animation-duration) var(--animation-curve);
+  }
+
+  .card-glow:hover {
+    box-shadow: var(--glow-purple);
+  }
+
+  .neural-bg {
+    background: 
+      radial-gradient(circle at 20% 50%, hsl(188 100% 50% / 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, hsl(280 80% 60% / 0.1) 0%, transparent 50%);
+  }
+}
