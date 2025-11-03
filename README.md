@@ -1,9 +1,6 @@
 # AI Oracle Network - Decentralized AI Intelligence for Blockchain
 
-![AI Oracle Network](https://img.shields.io/badge/Built_on-Polygon-8247E5?style=for-the-badge&logo=polygon)
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Production_Ready-success?style=for-the-badge)
-
+ 
 > **"Chainlink for AI"** - A decentralized oracle network bringing real-time AI intelligence to blockchain smart contracts
 
 ## 🌟 What is AI Oracle Network?
@@ -269,45 +266,7 @@ contract AIOracle is ChainlinkClient {
 ```
 
 ---
-
-## 🗺️ Roadmap
-
-### Phase 1: MVP (✅ Complete)
-- ✅ Core platform architecture
-- ✅ User authentication
-- ✅ Provider & developer dashboards
-- ✅ Marketplace for AI models
-- ✅ Polygon integration
-
-### Phase 2: Beta Launch (🚧 In Progress)
-- 🔄 AI model integration
-- 🔄 Request processing engine
-- 🔄 Consensus mechanism
-- 🔄 Payment system
-
-### Phase 3: Production (📅 Planned)
-- 📅 Multi-chain support (Ethereum, Avalanche, BSC)
-- 📅 Advanced analytics
-- 📅 Mobile app
-- 📅 Governance token launch
-
-### Phase 4: Expansion (📅 Future)
-- 📅 Custom model training
-- 📅 Enterprise solutions
-- 📅 Hardware acceleration
-- 📅 Global node network
-
----
-
-  
-
  
-
-## 👥 Team
-
-Built by a passionate team of blockchain and AI engineers dedicated to bridging Web3 and artificial intelligence.
-
----
 
 ## ⚡ Built on Polygon
 
